@@ -8,15 +8,15 @@ class ValueParser {
     parseOperatingMode(_response) {
         let value = _response.slice(-2);
         switch (value) {
-            case "00":
+            case "0":
                 return ValueDefinitions_1.OperatingModes.OFF;
-            case "01":
+            case "1":
                 return ValueDefinitions_1.OperatingModes.MANUAL;
-            case "02":
+            case "2":
                 return ValueDefinitions_1.OperatingModes.WINTER;
-            case "03":
+            case "3":
                 return ValueDefinitions_1.OperatingModes.SUMMER;
-            case "04":
+            case "4":
                 return ValueDefinitions_1.OperatingModes.SUMMER_EX;
             default:
                 this.ventcubecontrol.log.warn("UNHANDELED VALUE @parseOperatingMode! Was: " + value);
@@ -26,19 +26,19 @@ class ValueParser {
     parseManualFanLevel(_response) {
         let value = _response.slice(-2);
         switch (value) {
-            case "00":
+            case "0":
                 return ValueDefinitions_1.FanLevels.OFF;
-            case "01":
+            case "1":
                 return ValueDefinitions_1.FanLevels.LEVEL_1;
-            case "02":
+            case "2":
                 return ValueDefinitions_1.FanLevels.LEVEL_2;
-            case "03":
+            case "3":
                 return ValueDefinitions_1.FanLevels.LEVEL_3;
-            case "04":
+            case "4":
                 return ValueDefinitions_1.FanLevels.LEVEL_4;
-            case "05":
+            case "5":
                 return ValueDefinitions_1.FanLevels.AUTO;
-            case "06":
+            case "6":
                 return ValueDefinitions_1.FanLevels.LINEAR;
             default:
                 this.ventcubecontrol.log.warn("UNHANDELED VALUE @parseManualFanLevel! Was: " + value);
@@ -48,15 +48,15 @@ class ValueParser {
     parseCurrentFanLevel(_response) {
         let value = _response.slice(-2);
         switch (value) {
-            case "00":
+            case "0":
                 return ValueDefinitions_1.FanLevels.OFF;
-            case "01":
+            case "1":
                 return ValueDefinitions_1.FanLevels.LEVEL_1;
-            case "02":
+            case "2":
                 return ValueDefinitions_1.FanLevels.LEVEL_2;
-            case "03":
+            case "3":
                 return ValueDefinitions_1.FanLevels.LEVEL_3;
-            case "04":
+            case "4":
                 return ValueDefinitions_1.FanLevels.LEVEL_4;
             default:
                 this.ventcubecontrol.log.warn("UNHANDELED VALUE @parseCurrentFanLevel! Was: " + value);

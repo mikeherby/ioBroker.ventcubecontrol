@@ -16,19 +16,19 @@ export class ValueParser
 
         switch (value)
         {
-            case "00":
+            case "0":
                 return OperatingModes.OFF;
 
-            case "01":
+            case "1":
                 return OperatingModes.MANUAL;
 
-            case "02":
+            case "2":
                 return OperatingModes.WINTER;
 
-            case "03":
+            case "3":
                 return OperatingModes.SUMMER;
 
-            case "04":
+            case "4":
                 return OperatingModes.SUMMER_EX;
 
             default:
@@ -43,25 +43,25 @@ export class ValueParser
 
         switch (value)
         {
-            case "00":
+            case "0":
                 return FanLevels.OFF;
 
-            case "01":
+            case "1":
                 return FanLevels.LEVEL_1;
 
-            case "02":
+            case "2":
                 return FanLevels.LEVEL_2;
 
-            case "03":
+            case "3":
                 return FanLevels.LEVEL_3;
 
-            case "04":
+            case "4":
                 return FanLevels.LEVEL_4;
 
-            case "05":
+            case "5":
                 return FanLevels.AUTO;
 
-            case "06":
+            case "6":
                 return FanLevels.LINEAR;
 
             default:
@@ -76,19 +76,19 @@ export class ValueParser
 
         switch (value)
         {
-            case "00":
+            case "0":
                 return FanLevels.OFF;
 
-            case "01":
+            case "1":
                 return FanLevels.LEVEL_1;
 
-            case "02":
+            case "2":
                 return FanLevels.LEVEL_2;
 
-            case "03":
+            case "3":
                 return FanLevels.LEVEL_3;
 
-            case "04":
+            case "4":
                 return FanLevels.LEVEL_4;           
 
             default:
